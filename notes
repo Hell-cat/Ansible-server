@@ -1,1 +1,20 @@
+Mám centos 7
+Napřed skusim nainstalovat na centos apache (httpd) 
+>nainstalovanej defaultně není
+
+
+
+Instalace Ansible na windows jako controlling machine
+>zapnutí developer mode, zakliknutí linux enviroment for windows
+>v cmd nefunguje bash, zkouším lxrun /instalace
+poté v bash on ubuntu:
+sudo apt-get install software-properties-common
+sudo apt-add-repository ppa:ansible/ansible
+sudo apt-get update
+sudo apt-get install ansible
+
+https://www.youtube.com/watch?v=9g0IGoRJtzM
+
+
+Hesla 12341234, 1234, 2401
 
