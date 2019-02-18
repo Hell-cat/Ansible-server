@@ -15,6 +15,16 @@ sudo apt-get install ansible
 
 https://www.youtube.com/watch?v=9g0IGoRJtzM
 
+Playbooks - testujeme
+  vim playbook.yml z vimu se vyskakuje [ESC] > : > wq > [ENTER]
+  začíná ---
+  ansible-playbook -i inventory testbook.yml --connection=local
+Inventory jsou normální soubory > vim inventory
+  jsou v nich skuppiny [testing] a pod nima localhost a test1.domain.tld ....
+
+
+
+
 
 Hesla 12341234, 1234, 2401
 
