@@ -26,6 +26,7 @@ Inventory jsou normální soubory > vim inventory
 Snažím se připojit jakoby k ansible ten virual box - můj server. Napřed bych ho chtěl alespon pingnout, než pochopim to ssh
   Jak zjistím ip adresu toho serveru? Zkousim ip addr, ip a, hostname -i
   ansible --list-host all
+  pingování: ansible -i inventory all -m ping
 SSH!!! Nuže ssh se vyrábí ssh-keygen -t rsa
   ukládá se to /root/ssh pokud chceme vidět zkryté složky v /root musíme ls -la
   
