@@ -19,10 +19,12 @@ Playbooks - testujeme
   vim playbook.yml z vimu se vyskakuje [ESC] > : > wq > [ENTER]
   začíná ---
   ansible-playbook -i inventory testbook.yml --connection=local
+  --- - name: testing ansible hosts: gkuntz-2w10 tasks: - name: echo a message debug: msg="this is working"
 Inventory jsou normální soubory > vim inventory
   jsou v nich skuppiny [testing] a pod nima localhost a test1.domain.tld ....
 
-
+Snažím se připojit jakoby k ansible ten virual box - můj server. Napřed bych ho chtěl alespon pingnout, než pochopim to ssh
+Jak zjistím ip adresu toho serveru? Zkousim ip addr, ip a, hostname -i
 
 
 
