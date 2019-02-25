@@ -30,7 +30,7 @@ Snažím se připojit jakoby k ansible ten virual box - můj server. Napřed byc
 SSH!!! Nuže ssh se vyrábí ssh-keygen -t rsa
   ukládá se to /root/ssh pokud chceme vidět zkryté složky v /root musíme ls -la
   SSH nešlo připojit (ssh root@127.0.0.1) tak zkouším povolit porty podle https://unix.stackexchange.com/questions/121588/cant-access-ssh-in-my-vm-centos
-  YESSSSS funguje to fuck yeah
+  YESSSSS funguje to fuck yeah (ale nakonec jsem předělal oba porty na 22)
   MUSÍ TO BÝT ssh -p2222 root@127.0.0.1
   /sbin/service sshd status    >  ukáže jestli ssh funguje
   Základní otestování ssh: https://www.techotopia.com/index.php/Configuring_CentOS_Remote_Access_using_SSH
