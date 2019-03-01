@@ -36,6 +36,8 @@ SSH!!! Nuže ssh se vyrábí ssh-keygen -t rsa
   Základní otestování ssh: https://www.techotopia.com/index.php/Configuring_CentOS_Remote_Access_using_SSH
   Takže znovu vytvořeno ssh-keygen -t rsa (we win)
   poté ssh-copy-id root@127.0.0.1
+  [testing]
+  192.168.56.101 ansible_connection=ssh ansible_ssh_user=root ansible_ssh_pass=root
 CENTOS pokud chci psát do txt, tak to musím povolit chmod gu+w lel.txt
 
 APACHE instalace apache přes ansible: https://codingbee.net/ansible/ansible-a-playbook-for-setting-up-an-apache-webserver
