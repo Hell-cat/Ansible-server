@@ -1,0 +1,21 @@
+---
+- name: Tohle nastavi httpd webserver
+  hosts: 192.168.56.101
+  tasks:
+  - name: Installace apache
+    yum:
+      name: httpd
+      state: present
+  - name: ujistime se ze httpd bezi
+    service:
+      name: httpd
+      state: started
+  - name: otevreni portu 80 pro http
+    firewalld:
+      service: http
+      permanent: true
+      state: enabled
+  - name: restartovani firewalld kvuli nacteni novych nastaveni
+    service:
+      name: firewalld
+      state: restarted
