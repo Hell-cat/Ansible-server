@@ -50,6 +50,9 @@ APACHE instalace apache přes ansible: https://codingbee.net/ansible/ansible-a-p
   
 Velká IP krize 1.3.19: V nastavení jsou zapnuty dva adaptéry, NAT a "host only něco". Bez dalšího nastavování.
 
+HTOP:
+  instalace htopu: http://cheapwindowsvps.com/blog/how-to-install-htop-on-centos-7/
+
 
 Hesla 12341234, 1234, 2401, Jony9371Jony
 
