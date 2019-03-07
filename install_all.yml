@@ -3,11 +3,18 @@
   hosts: all
   tasks:
 
-  - name: instalace dalsich repozitaru
+  - name: instalace dalsich repozitaru pro htop
     yum:
       name: epel-release
       state: installed
-
+  - name: instalace dalsich repozitaru pro mysql
+    get_url: 
+      url: http://dev.mysql.com/get/mysql57-community-release-el7-9.noarch.rpm
+      dest: /opt
+  - name: instalace dalsich repozitaru pro mysql
+    yum:
+      name: /opt/mysql57-community-release-el7-9.noarch.rpm
+      state: present
   - name: update yumu
     yum:
       state: latest
@@ -15,9 +22,14 @@
   - name: instalace potrebnych programu
     yum: 
       name:
-        - apache
+        - httpd
         - htop 
         - nginx
+        - postgresql-server
+        - postgresql-contrib
+        - mysql-server
+    #    - mysql-client
+    #    - python-mysqldb
       state: installed
   - name: APACHE ujistime se ze bezi
     service:
@@ -32,3 +44,17 @@
     service:
       name: firewalld
       state: restarted 
+  
+  #- name: NGINX start
+  #  service:
+   #   name: nginx
+    #  state: started
+
+  # UDELA SE JEN JEDNOU!!! POVOLIT na zkousku - name: POSTGRESQL pomuze to nahodit
+   # command: postgresql-setup initdb
+   
+  - name: POSTGRESQL startuje
+    shell: systemctl start postgresql
+
+
+
