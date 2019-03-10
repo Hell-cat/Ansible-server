@@ -56,5 +56,15 @@ HTOP:
   instalace htopu: http://cheapwindowsvps.com/blog/how-to-install-htop-on-centos-7/
 Nginx: https://code-maven.com/install-and-configure-nginx-using-ansible Zkouška: nginx
 Postgresql: https://www.linode.com/docs/databases/postgresql/how-to-install-postgresql-relational-databases-on-centos-7/
+Wordpress: https://serverfault.com/questions/891373/unable-to-create-mysql-database-through-ansible
+  https://www.tecmint.com/automate-wordpress-installations-in-multiple-linux-servers-using-ansible/
+  Problémy: Nechtelo to vzít vůbec nic, musel jsem předelat složky do "roles"
+  1) nechtelo to vzít wp-dependencies/tasks/main.yml protože se tomu nelíbil layout, i když to bylo zkopírovaný. praveno
+  2) nechtelo to instalovat ve stejnym míste, i když zkopírováno. Opravecno
+  3) nechtělo to vytvářet tu mariadb databázi, nainstalovan ručně mysql-python. Uz to funguje
+  4) nechtelo to to vytvářed mariadb databazi kvuli heslum na roota, pridana radka podle jineho tutorialo, link nahore.
+  6) nechce to nahodit service mariadb
+Porainer: https://www.howtoforge.com/tutorial/ubuntu-docker-portainer/
+  
 Hesla 12341234, 1234, 2401, Jony9371Jony
 
