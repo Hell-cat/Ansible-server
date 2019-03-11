@@ -65,6 +65,7 @@ Wordpress: https://serverfault.com/questions/891373/unable-to-create-mysql-datab
   4) nechtelo to to vytvářed mariadb databazi kvuli heslum na roota, pridana radka podle jineho tutorialo, link nahore.
   6) nechce to nahodit service mariadb, jo protože neni nainstalovanej, MUSIM FORCE installovat mariadb, YUM CHCE MERMOMOCI INSTALOVAT MYSQL
     dělám to podle: https://linux4one.com/how-to-install-mariadb-10-on-centos-7/
+  7) číslo (6) nefunguje, zkouším jiný způsob přes remi repo https://www.tecmint.com/install-wordpress-with-apache-on-centos-rhel-fedora/
 Porainer: https://www.howtoforge.com/tutorial/ubuntu-docker-portainer/
   
 Hesla 12341234, 1234, 2401, Jony9371Jony
