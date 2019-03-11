@@ -71,5 +71,7 @@ Porainer: https://www.howtoforge.com/tutorial/ubuntu-docker-portainer/
   9) čílo (8) funguje, obe mariadb nainstalovany pres to remi repo
   10) hlasí tu nespecifikovanou chybu, mažu z wp-dependencies to co jsem tam připsal k tomu vytváředí mariadb databáze. To nefunguje, zase to hlásí
     že to nemá práva vytvářet ten config, vracím se zpět
+    
+https://www.linode.com/docs/databases/mariadb/how-to-install-mariadb-on-centos-7/
 Hesla 12341234, 1234, 2401, Jony9371Jony
 
