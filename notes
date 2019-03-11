@@ -67,6 +67,7 @@ Wordpress: https://serverfault.com/questions/891373/unable-to-create-mysql-datab
     dělám to podle: https://linux4one.com/how-to-install-mariadb-10-on-centos-7/
   7) číslo (6) nefunguje, zkouším jiný způsob přes remi repo https://www.tecmint.com/install-wordpress-with-apache-on-centos-rhel-fedora/
 Porainer: https://www.howtoforge.com/tutorial/ubuntu-docker-portainer/
+  8) Bullshit i am doing right now: yum list installed | grep mysql ---> odinstaloval jsem všechno co jsem tam našel, tak uvidíme (Záloha teoreticky v obrázku)
   
 Hesla 12341234, 1234, 2401, Jony9371Jony
 
