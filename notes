@@ -69,5 +69,7 @@ Wordpress: https://serverfault.com/questions/891373/unable-to-create-mysql-datab
 Porainer: https://www.howtoforge.com/tutorial/ubuntu-docker-portainer/
   8) Bullshit i am doing right now: yum list installed | grep mysql ---> odinstaloval jsem všechno co jsem tam našel, tak uvidíme (Záloha teoreticky v obrázku)
   9) čílo (8) funguje, obe mariadb nainstalovany pres to remi repo
+  10) hlasí tu nespecifikovanou chybu, mažu z wp-dependencies to co jsem tam připsal k tomu vytváředí mariadb databáze. To nefunguje, zase to hlásí
+    že to nemá práva vytvářet ten config, vracím se zpět
 Hesla 12341234, 1234, 2401, Jony9371Jony
 
