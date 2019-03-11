@@ -63,7 +63,8 @@ Wordpress: https://serverfault.com/questions/891373/unable-to-create-mysql-datab
   2) nechtelo to instalovat ve stejnym míste, i když zkopírováno. Opravecno
   3) nechtělo to vytvářet tu mariadb databázi, nainstalovan ručně mysql-python. Uz to funguje
   4) nechtelo to to vytvářed mariadb databazi kvuli heslum na roota, pridana radka podle jineho tutorialo, link nahore.
-  6) nechce to nahodit service mariadb
+  6) nechce to nahodit service mariadb, jo protože neni nainstalovanej, MUSIM FORCE installovat mariadb, YUM CHCE MERMOMOCI INSTALOVAT MYSQL
+    dělám to podle: https://linux4one.com/how-to-install-mariadb-10-on-centos-7/
 Porainer: https://www.howtoforge.com/tutorial/ubuntu-docker-portainer/
   
 Hesla 12341234, 1234, 2401, Jony9371Jony
