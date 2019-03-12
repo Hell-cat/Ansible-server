@@ -78,7 +78,7 @@ Porainer: https://www.howtoforge.com/tutorial/ubuntu-docker-portainer/
     mysql -u root -p
     show databases
     drop database MyWP
-    
+    Virtualhost se posílá do etc/httpd/conf.d
 https://www.linode.com/docs/databases/mariadb/how-to-install-mariadb-on-centos-7/
 Hesla 12341234, 1234, 2401, Jony9371Jony
 
