@@ -71,6 +71,13 @@ Porainer: https://www.howtoforge.com/tutorial/ubuntu-docker-portainer/
   9) čílo (8) funguje, obe mariadb nainstalovany pres to remi repo
   10) hlasí tu nespecifikovanou chybu, mažu z wp-dependencies to co jsem tam připsal k tomu vytváředí mariadb databáze. To nefunguje, zase to hlásí
     že to nemá práva vytvářet ten config, vracím se zpět
+  11)  JAK JSEM OPRAVIL WP-DEPENDENCIES/TASKS/MAIN.YML Nuže dole jsem měl u těch proměných mezery a u toho priv se posouvá quota. nahoru k databazi jsem připsal root a root
+    https://github.com/ansible/ansible/issues/13983
+    v tom wp-config jsem zakomentoval to kopírování php samplu
+    wordpress se nainstaluje do usr/share/wordpress
+    mysql -u root -p
+    show databases
+    drop database MyWP
     
 https://www.linode.com/docs/databases/mariadb/how-to-install-mariadb-on-centos-7/
 Hesla 12341234, 1234, 2401, Jony9371Jony
