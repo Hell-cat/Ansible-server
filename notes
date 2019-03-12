@@ -79,6 +79,7 @@ Porainer: https://www.howtoforge.com/tutorial/ubuntu-docker-portainer/
     show databases
     drop database MyWP
     Virtualhost se posílá do etc/httpd/conf.d
+    https://gist.github.com/NapoleonWils0n/3998028 ale vzdyt to v tom varu neexistujecd
 https://www.linode.com/docs/databases/mariadb/how-to-install-mariadb-on-centos-7/
 Hesla 12341234, 1234, 2401, Jony9371Jony
 
