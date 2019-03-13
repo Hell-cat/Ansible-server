@@ -1,0 +1,4 @@
+Pro kompletni instalaci spoustet full.yml
+Jinak se daji main.yml wordpress.yml portainer.yml spoustet samostatně.
+
+DULEZITE: my.cnf se po stahnuti musí přejmenovat na .my.cnf protože github nepodporuje upload hidden files...
