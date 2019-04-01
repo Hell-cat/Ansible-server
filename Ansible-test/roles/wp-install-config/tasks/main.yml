@@ -1,0 +1,31 @@
+---
+# tasks file for wp-install-config
+- name: Create directory to download WordPress
+  command: mkdir -p /opt/source/wordpress
+  args:
+    warn: false
+- name: Download WordPress
+  get_url: url=https://www.wordpress.org/latest.tar.gz dest=/opt/source/wordpress/wordpress.tar.gz validate_certs=no
+
+- name: Extract WordPress
+  command: "tar xzf /opt/source/wordpress/wordpress.tar.gz -C /var/www/html --strip-components 1"
+  args:
+    warn: false
+- name: Send config file
+  copy: src=wp-config.php dest=/var/www/html/wp-config.php mode=0644
+- name: kopirovani localhost.conf
+  copy: src=localhost.conf dest=/etc/httpd/conf.d mode=0644
+- name: mazani wp-config.php
+  file:
+    path: /usr/share/wordpress/wp-config.php
+    state: absent
+- name: kopirovani wp-config.php
+  copy: src=wp-config.php dest=/usr/share/wordpress
+- name: mazani welcome.conf
+  file:
+    path: /etc/httpd/conf.d/welcome.conf
+    state: absent
+- name: restartovani httpd
+  service:
+    name: httpd
+    state: restarted

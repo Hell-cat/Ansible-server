@@ -1,0 +1,4 @@
+---
+- import_playbook: main.yml
+- import_playbook: wordpress.yml
+- import_playbook: portainer.yml

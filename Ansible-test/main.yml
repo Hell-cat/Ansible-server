@@ -1,0 +1,69 @@
+---
+- name: naistaluje vsechny potrebne programy na node a take je nastavi
+  hosts: all
+  tasks:
+
+  - name: instalace dalsich repozitaru pro htop
+    yum:
+      name: epel-release
+      state: installed
+    changed_when: false
+#  - name: instalace dalsich repozitaru pro mysql
+#    get_url:
+#      url: http://repo.mysql.com/mysql-community-release-el7-5.noarch.rpm
+#      dest: /opt
+#  - name: instalace dalsich repozitaru pro mysql
+#    yum:
+#      name: /opt/mysql-community-release-el7-5.noarch.rpm
+#      state: present
+  - name: update yumu
+    yum:
+      state: latest
+
+  - name: instalace potrebnych programu
+    yum: 
+      name:
+        - httpd
+        - htop 
+        - nginx
+        - postgresql-server
+        - postgresql-contrib
+        - mariadb-server
+        - mariadb
+    #    - mysql-server
+    #    - mysql-client
+    #    - python-mysqldb
+        - p7zip
+        - wget
+        - lm_sensors
+        - ethtool
+        - certbot
+      state: installed
+    changed_when: false
+  - name: APACHE ujistime se ze bezi
+    service:
+      name: httpd
+      state: started
+  - name: APACHE otevreni portu pro http
+    firewalld:
+      service: http
+      permanent: true
+      state: enabled
+  - name: APACHE restartovani firewalld kvuli nacteni novych nastaveni
+    service:
+      name: firewalld
+      state: restarted 
+# Pouzit misto Apache pokud chceme, avsak neda se spustit soubezne.  
+#  - name: NGINX start
+#    service:
+#      name: nginx
+#      state: started
+
+# Da se spustit pouze jednou, pri opetovnem spusteni playbooku zakomentovat
+  - name: POSTGRESQL pomuze to nahodit
+    command: postgresql-setup initdb
+   
+  - name: POSTGRESQL startuje
+    service:
+      name: postgresql
+      state: started
